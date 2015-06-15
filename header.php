@@ -67,7 +67,6 @@ if ( !defined( 'ABSPATH' ) ) {
 		} ?>
 
 		<?php responsive_in_header(); // header hook ?>
-
 		<?php if ( get_header_image() != '' ) : ?>
 
 			<div id="logo">
@@ -84,8 +83,10 @@ if ( !defined( 'ABSPATH' ) ) {
 			</div><!-- end of #logo -->
 
 		<?php endif; // header image was removed (again) ?>
-
 		<?php get_sidebar( 'top' ); ?>
+		<div id="banner">
+		    <img src="<?php echo get_stylesheet_directory_uri(); ?>/bosons-byra-banner.jpg" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> - <?php bloginfo( 'description' ); ?>">
+		</div>
 		<?php wp_nav_menu( array(
 			'container'       => 'div',
 			'container_class' => 'main-nav',

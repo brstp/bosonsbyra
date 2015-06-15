@@ -12,10 +12,29 @@
  Text Domain:  bosonsbyra
 */
 
+a {
+    color: #114788;
+}
+
 .menu a {
     font-size: 18px;
 }
 
 body {
     background: #bbccee;
+}
+
+#banner {
+    width: 100%;
+    max-width: 100%;
+    clear: both;
+    padding-top: 0.75em;
+}
+
+.menu li li a {
+    font-size: 16px;
+}
+
+.powered {
+    display: none;
 }
